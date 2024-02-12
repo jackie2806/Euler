@@ -4,13 +4,13 @@ function findFirstRepeated(gifts) {
   
     for (let i = 0; i < gifts.length; i++) {
       for (let j = i + 1; j < gifts.length; j++) {
-        console.log(repeat, 'repeat')
+        
         if (gifts[i] === gifts[j]) {
           if (!repeat || j < numbRepeat) {
-            console.log(repeat, 'repeat')
-            console.log(j, 'numbRepeat')
             repeat = true;
             numbRepeat = j;
+          
+         
           }
         }
       }
@@ -23,5 +23,5 @@ function findFirstRepeated(gifts) {
     }
   }
 
-  //findFirstRepeated([1, 10, 2, 10, 20, 50, 7, 0, 0, 7])
+  findFirstRepeated([1, 10, 2, 10, 20, 50, 7, 0, 0, 7])
   findFirstRepeated([1, 3, 4, 5, 0, 1, 3, 0, 7])
